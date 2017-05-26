@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Teste envio com email</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"/>
+	
+</head>
+<body>
+	
+	
+	
+	<div class="container " style="padding: 20px;">
+
+		<form action="/enviaemail" method="POST" class="form-horizontal">
+			
+			<div class="input-group">
+			  <span class="input-group-addon" id="basic-addon1">@</span>
+			  <input type="text" class="form-control" id="nome" name="nome" 
+			  		 placeholder="Username" />
+			</div>  <br />
+			
+			<div class="input-group">
+			  <input type="text" class="form-control" name="email" id="email" placeholder="Recipient's username"/> 
+			  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+			</div>  <br />
+			
+			<div class="input-group">
+			  <span class="input-group-addon">$</span>
+			  <input type="text" class="form-control" name="mensagem" id="mensagem"/> <br />
+			  
+			</div>  <br />
+			
+			<button class="btn btn-primary" type="submit"> Enviar </button>
+		</form>
+	</div>
+	
+</body>
+</html>
+
+
+<!-- 		<div class="alert alert-success" th:if="${!#strings.isEmpty(mensagem)}" > -->
+<!-- 			<span th:text="${mensagem}"></span> -->
+<!-- 		</div> -->
+<!-- 			<div class="alert-danger" th:if="${#fields.hasAnyErrors()}"> -->
+<!-- 				<div th:each="detailedError : ${#fields.detailedErrors()}"> -->
+<!-- 					<span th:text="${detailedErrors.message}"> </span> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
