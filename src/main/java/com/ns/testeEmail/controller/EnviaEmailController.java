@@ -23,7 +23,7 @@ public class EnviaEmailController   {
     	ModelAndView mv = new ModelAndView("index");
     	System.out.println("chegou aqui ");
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo("natanael@adminfo.com.br");
+        mailMessage.setTo("belini@adminfo.com.br");
         mailMessage.setSubject(email.getMensagem());
         mailMessage.setText(email.getMensagem());
         mailMessage.setFrom(email.getEmail());

@@ -1,14 +1,6 @@
 package com.ns.testeEmail.controller;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
-
-import org.hibernate.validator.constraints.Email;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +13,7 @@ import com.ts.testeEmail.model.ModeloEmail;
 @Controller
 public class SimpleHtmlMessageSender extends AbstractMessageSender {
 	
-	 private JavaMailSender javaMailSender;
+	 //private JavaMailSender javaMailSender;
 
 	
 //	public ModelAndView sendMensagem() throws MessagingException {
